@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  functions:
+    name: Build & Lint Functions
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: repo/server/functions/node_modules
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-functions-${{ hashFiles('repo/server/functions/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-functions-
+
+      - name: Install dependencies
+        working-directory: repo/server/functions
+        run: npm ci
+
+      - name: Run lint
+        working-directory: repo/server/functions
+        run: npm run lint || true
+
+      - name: Build
+        working-directory: repo/server/functions
+        run: npm run build
+
+      - name: Run tests
+        working-directory: repo/server/functions
+        run: npm test
+
+  deploy:
+    name: Deploy to Firebase (main)
+    runs-on: ubuntu-latest
+    needs: functions
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+
+      - name: Install Firebase Tools
+        run: npm install -g firebase-tools
+
+      - name: Deploy Functions
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          cd repo/server/functions
+          npm ci
+          npm run build
+          firebase deploy --only functions --token "$FIREBASE_TOKEN"
