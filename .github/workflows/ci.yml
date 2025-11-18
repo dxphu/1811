@@ -34,7 +34,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: repo/server/functions
-        run: npm ci
+        run: npm install
 
       - name: Run lint
         working-directory: repo/server/functions
