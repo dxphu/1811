@@ -1,0 +1,30 @@
+name: CI (auto on ci-test)
+
+on:
+  push:
+    branches: [ ci-test ]
+
+jobs:
+  functions:
+    name: Build & Test Functions (ci-test)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        working-directory: repo/server/functions
+        run: npm ci
+
+      - name: Build
+        working-directory: repo/server/functions
+        run: npm run build
+
+      - name: Run tests
+        working-directory: repo/server/functions
+        run: npm test
