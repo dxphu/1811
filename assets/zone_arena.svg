@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="16" fill="#FFF5F8"/>
+  <g transform="translate(16,16)" stroke="#FF6B6B" stroke-width="4" fill="none">
+    <circle cx="48" cy="48" r="28"/>
+    <path d="M28 32 L68 64" stroke-linecap="round"/>
+    <path d="M28 64 L68 32" stroke-linecap="round"/>
+  </g>
+  <text x="64" y="112" font-family="Inter, Arial" font-size="12" fill="#9A2F3F" text-anchor="middle">Arena</text>
+</svg>

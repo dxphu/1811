@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="100%" height="100%" fill="#F0FFF6"/>
+  <g id="header">
+    <rect x="12" y="12" width="366" height="64" rx="10" fill="#FFFFFF" stroke="#E6F9F4"/>
+    <text x="36" y="48" font-family="Inter" font-size="18" fill="#0B6B61">🔦 Listening Lighthouse</text>
+    <text x="330" y="48" font-family="Inter" font-size="12" fill="#666" text-anchor="end">Progress 2/10</text>
+  </g>
+
+  <g transform="translate(20,100)">
+    <rect x="0" y="0" width="350" height="180" rx="12" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="24" y="44" font-family="Inter" font-size="16" fill="#111">Listen and choose the correct word:</text>
+    <g transform="translate(24,72)">
+      <rect x="0" y="0" width="56" height="56" rx="8" fill="#FFD166"/>
+      <text x="28" y="36" font-family="Inter" font-size="28" fill="#8B5E3C" text-anchor="middle">🔊</text>
+      <text x="88" y="36" font-family="Inter" font-size="20" fill="#333">(Audio plays)</text>
+    </g>
+  </g>
+
+  <g id="choices" transform="translate(20,320)">
+    <rect x="0" y="0" width="350" height="56" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="24" y="36" font-family="Inter" font-size="16" fill="#111">Apple</text>
+
+    <rect x="0" y="72" width="350" height="56" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="24" y="108" font-family="Inter" font-size="16" fill="#111">Banana</text>
+
+    <rect x="0" y="144" width="350" height="56" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="24" y="180" font-family="Inter" font-size="16" fill="#111">Orange</text>
+
+    <rect x="0" y="216" width="350" height="56" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="24" y="252" font-family="Inter" font-size="16" fill="#111">Strawberry</text>
+  </g>
+
+  <g id="bottom" transform="translate(0,720)">
+    <rect x="12" y="0" width="366" height="92" rx="12" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="28" y="48" font-family="Inter" font-size="14" fill="#666">Plays left: 2</text>
+    <rect x="248" y="16" width="120" height="60" rx="8" fill="#00A8A0"/>
+    <text x="308" y="52" font-family="Inter" font-size="16" fill="#FFF" text-anchor="middle">Next</text>
+  </g>
+</svg>

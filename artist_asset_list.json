@@ -1,0 +1,85 @@
+{
+  "project": "Lingua Quest",
+  "assets": [
+    {
+      "id": "avatar_explorer_sheet",
+      "type": "concept_sheet",
+      "description": "Explorer - front, 3/4, back",
+      "format": "PSD, SVG, PNG",
+      "sizes_px": [3000, 3000],
+      "priority": "high"
+    },
+    {
+      "id": "avatar_scholar_sheet",
+      "type": "concept_sheet",
+      "description": "Scholar - front, 3/4, back",
+      "format": "PSD, SVG, PNG",
+      "sizes_px": [3000, 3000],
+      "priority": "high"
+    },
+    {
+      "id": "avatar_artist_sheet",
+      "type": "concept_sheet",
+      "description": "Street Artist - front, 3/4, back",
+      "format": "PSD, SVG, PNG",
+      "sizes_px": [3000, 3000],
+      "priority": "high"
+    },
+    {
+      "id": "companion_blinky_sprites",
+      "type": "sprites",
+      "description": "Little Owl sprites: idle, hint, celebrate",
+      "format": "PNG (transparent)",
+      "sizes_px": [128, 64, 32],
+      "priority": "high"
+    },
+    {
+      "id": "companion_flick_sprites",
+      "type": "sprites",
+      "description": "Pocket Fox sprites + 6-frame dash cycle",
+      "format": "PNG (transparent)",
+      "sizes_px": [128, 64, 32],
+      "priority": "medium"
+    },
+    {
+      "id": "companion_lumi_sprites",
+      "type": "sprites",
+      "description": "Lantern Bug sprites with glow pass",
+      "format": "PNG (transparent)",
+      "sizes_px": [128, 64, 32],
+      "priority": "medium"
+    },
+    {
+      "id": "avatar_icons",
+      "type": "ui_icons",
+      "description": "Avatar small icons for nav and profile",
+      "format": "SVG, PNG",
+      "sizes_px": [64, 48, 32],
+      "priority": "high"
+    },
+    {
+      "id": "cosmetic_items",
+      "type": "items",
+      "description": "Hats, backpacks, shoes - modular parts",
+      "format": "SVG, PNG",
+      "sizes_px": [512, 256, 128],
+      "priority": "medium"
+    },
+    {
+      "id": "map_icons",
+      "type": "ui_icons",
+      "description": "4 zone icons + building icons",
+      "format": "SVG",
+      "sizes_px": [256, 128],
+      "priority": "high"
+    },
+    {
+      "id": "particle_effects",
+      "type": "vfx",
+      "description": "Confetti, sparkle, glow - Lottie + sprite atlas",
+      "format": "JSON (Lottie), PNG",
+      "sizes_px": [1024],
+      "priority": "medium"
+    }
+  ]
+}

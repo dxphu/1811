@@ -1,0 +1,4 @@
+TTS==0.13.3
+numpy
+soundfile
+torch

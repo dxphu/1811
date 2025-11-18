@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <g id="header">
+    <rect x="12" y="12" width="366" height="64" rx="10" fill="#00A8A0"/>
+    <text x="36" y="48" font-family="Inter" font-size="18" fill="#FFF">🏪 City Store</text>
+    <text x="330" y="48" font-family="Inter" font-size="12" fill="#FFF" text-anchor="end">Gold: 450</text>
+  </g>
+
+  <g transform="translate(20,100)">
+    <rect x="0" y="0" width="350" height="120" rx="12" fill="#F7FFF9" stroke="#E6EEF6"/>
+    <text x="24" y="36" font-family="Inter" font-size="16" fill="#111">Knowledge Library — Cost: 150 Gold</text>
+    <text x="24" y="68" font-family="Inter" font-size="12" fill="#666">Benefit: +15% XP from games</text>
+    <rect x="220" y="48" width="110" height="44" rx="8" fill="#FF6B6B"/>
+    <text x="275" y="78" font-family="Inter" font-size="14" fill="#FFF" text-anchor="middle">Build</text>
+  </g>
+
+  <g transform="translate(20,240)">
+    <rect x="0" y="0" width="350" height="120" rx="12" fill="#FFF8F9" stroke="#E6EEF6"/>
+    <text x="24" y="36" font-family="Inter" font-size="16" fill="#111">Vocabulary Garden (Zone 1) — Cost: 100 Gold</text>
+    <text x="24" y="68" font-family="Inter" font-size="12" fill="#666">Benefit: +10% XP for Zone 1</text>
+    <rect x="220" y="48" width="110" height="44" rx="8" fill="#00A8A0"/>
+    <text x="275" y="78" font-family="Inter" font-size="14" fill="#FFF" text-anchor="middle">Build</text>
+  </g>
+
+  <g id="bottom" transform="translate(0,720)">
+    <rect x="12" y="0" width="366" height="92" rx="12" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="28" y="48" font-family="Inter" font-size="14" fill="#666">Owned: 1 Library</text>
+    <text x="220" y="48" font-family="Inter" font-size="14" fill="#666">Build queue: 0</text>
+  </g>
+</svg>

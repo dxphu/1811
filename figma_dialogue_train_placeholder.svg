@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="100%" height="100%" fill="#F7F9FF"/>
+  <g id="header">
+    <rect x="12" y="12" width="366" height="64" rx="10" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="36" y="48" font-family="Inter" font-size="18" fill="#2B3A67">🚂 Dialogue Train</text>
+    <text x="330" y="48" font-family="Inter" font-size="12" fill="#666" text-anchor="end">Parts: 5</text>
+  </g>
+
+  <g transform="translate(20,100)">
+    <rect x="0" y="0" width="350" height="160" rx="12" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="24" y="44" font-family="Inter" font-size="16" fill="#111">Arrange the dialogue in the correct order.</text>
+  </g>
+
+  <g id="lines" transform="translate(20,280)">
+    <rect x="0" y="0" width="350" height="48" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="20" y="32" font-family="Inter" font-size="16" fill="#111">Hi, I'm John. What's your name?</text>
+
+    <rect x="0" y="72" width="350" height="48" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="20" y="104" font-family="Inter" font-size="16" fill="#111">Hi! My name is Sarah.</text>
+
+    <rect x="0" y="144" width="350" height="48" rx="8" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="20" y="176" font-family="Inter" font-size="16" fill="#111">Nice to meet you, Sarah.</text>
+  </g>
+
+  <g id="bottom" transform="translate(0,720)">
+    <rect x="12" y="0" width="366" height="92" rx="12" fill="#FFFFFF" stroke="#E6EEF6"/>
+    <text x="28" y="48" font-family="Inter" font-size="14" fill="#666">Hints used: 0/3</text>
+    <rect x="248" y="16" width="120" height="60" rx="8" fill="#00A8A0"/>
+    <text x="308" y="52" font-family="Inter" font-size="16" fill="#FFF" text-anchor="middle">Check</text>
+  </g>
+</svg>
